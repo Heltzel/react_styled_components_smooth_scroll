@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaBars } from 'react-icons/fa'
+import { FaTimes } from 'react-icons/fa'
 import {
   Nav,
   NavbarContainer,
@@ -12,14 +13,14 @@ import {
   NavBtnLink,
 } from './NavbarElements'
 
-const Navbar = () => {
+const Navbar = ({ isOpen, toggleSidebar }) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
           <NavLogo to="/">Euroco</NavLogo>
-          <MobileIcon>
-            <FaBars />
+          <MobileIcon onClick={toggleSidebar}>
+            {isOpen ? <FaTimes /> : <FaBars />}
           </MobileIcon>
           <NavMenu>
             <NavItem>

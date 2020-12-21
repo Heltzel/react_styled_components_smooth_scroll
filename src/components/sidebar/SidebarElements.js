@@ -5,18 +5,18 @@ import { Link as LinkS } from 'react-scroll'
 
 export const SidebarContainer = styled.aside`
   position: fixed;
-  z-index: 999;
+  /* z-index: 999; */
   width: 100%;
-  height: 100%;
+  height: 90%;
   background-color: #0d0d0d;
   display: grid;
   align-items: center;
+  margin-top:80px;
   top: 0;
   left: 0;
-  transition: all 0.3s ease-in-out;
-  /* opacity: ${({ isOpen }) => (isOpen ? '1' : '0')};
-  top: ${({ isOpen }) => (isOpen ? '0' : '-100%')}; */
-  top:0;
+  transition: all 0.7s ease-in-out;
+  /* opacity: ${({ isOpen }) => (isOpen ? '1' : '0')}; */
+  top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
 `
 export const Icon = styled.div`
   position: absolute;
